@@ -1,0 +1,374 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+header {
+    background-color: #000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.logo .inter { color: #00f; }
+.logo .server { color: #f00; }
+.logo .net { color: #ccc; font-size: 16px; }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav .login { color: #00f; }
+
+/* Promotional Banner */
+.promo-banner {
+    background: #000; /* Màu nền đen hiện tại */
+    background-image: url('basic.png'); /* Dòng code mới để chèn hình ảnh làm background */
+    background-size: cover; /* Đảm bảo hình ảnh phủ toàn bộ khu vực */
+    background-position: center; /* Căn giữa hình ảnh */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.promo-content h1 {
+    color: #fff;
+    font-size: 36px;
+    margin: 0;
+}
+
+.promo-content h2 {
+    color: #ffa500;
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.promo-content .price {
+    color: #fff;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.promo-content .price .highlight {
+    color: #ff0;
+    border: 2px solid #ff0;
+    padding: 5px;
+}
+
+.promo-content .caution {
+    color: #ff0;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buy-now {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.more-info {
+    background-color: #ffa500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Features Section */
+
+
+/* Detailed Comparison Table */
+.comparison-table {
+    padding: 20px;
+}
+
+.comparison-table .tables {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép xuống hàng */
+    justify-content: space-between; /* Căn đều các bảng */
+    gap: 20px; /* Khoảng cách giữa các bảng */
+}
+
+.comparison-table table {
+    width: 48%; /* Mỗi bảng chiếm 48% chiều rộng để chia thành 2 cột */
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Khoảng cách dưới mỗi bảng */
+}
+
+.comparison-table th, .comparison-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #e0e0e0; /* Viền xám nhạt */
+}
+
+.comparison-table th {
+    background-color: #b3e5fc; /* Màu xanh nhạt cho header */
+    color: #000; /* Chữ đen */
+    border: none; /* Không có viền cho header */
+}
+
+.comparison-table td {
+    background-color: #fff; /* Màu nền trắng cho ô */
+    color: #000; /* Chữ đen */
+}
+
+.comparison-table table th:first-child,
+.comparison-table table td:first-child {
+    width: 70%; /* Cột đầu tiên (tên tính năng) chiếm 70% */
+}
+
+.comparison-table table th:last-child,
+.comparison-table table td:last-child {
+    width: 30%; /* Cột "STANDARD" (có dấu tick) chiếm 30% */
+    text-align: center; /* Căn giữa các dấu tick */
+}
+
+.comparison-table tfoot button {
+    width: 100%;
+    padding: 10px;
+    background: none; /* Không có nền */
+    border: none;
+    color: #80a3c6; /* Chữ xanh dương */
+    cursor: pointer;
+    text-align: center;
+}
+
+.explore-all {
+    background-color: #1976d2; /* Màu xanh dương đậm */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    text-transform: uppercase; /* Chữ in hoa */
+}
+
+/* Control Panel and Migration Service Section */
+.control-panel-migration {
+    background-color: #fff;
+    padding: 40px 20px; /* Tăng padding để có không gian thoáng hơn */
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa để nội dung không bị trải quá rộng */
+    margin: 0 auto; /* Căn giữa section theo chiều ngang */
+}
+
+.control-panel, .migration-service {
+    display: flex; /* Sử dụng flexbox để chia thành 2 cột */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    gap: 100px; /* Khoảng cách giữa chữ và hình ảnh */
+    margin-bottom: 40px; /* Khoảng cách giữa các phần */
+}
+
+.control-panel .content, .migration-service .content {
+    flex: 1; /* Cột chữ chiếm 50% chiều rộng */
+}
+
+.control-panel .image, .migration-service .image {
+    flex: 1; /* Cột hình ảnh chiếm 50% chiều rộng */
+}
+
+.control-panel .image img, .migration-service .image img {
+    width: 75%; /* Hình ảnh chiếm toàn bộ chiều rộng của cột */
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+}
+
+.control-panel h3, .migration-service h3 {
+    color: #000;
+    font-size: 24px; /* Kích thước chữ giống hình ảnh */
+    margin-bottom: 10px;
+}
+
+.control-panel p, .migration-service p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.control-panel a, .migration-service a {
+    color: rgb(0, 174, 255);
+    text-decoration: none;
+}
+
+/* Server Capacity and Email Delivery Section */
+.server-capacity-email {
+    background-color: #fff;
+    padding: 40px 20px;
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+    margin: 0 auto; /* Căn giữa section */
+}
+
+.server-capacity, .domain-registration, .email-delivery, .ecommerce-content {
+    display: flex; /* Sử dụng flexbox để chia thành 2 cột (nếu có hình ảnh) */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    gap: 20px; /* Khoảng cách giữa chữ và hình ảnh */
+    margin-bottom: 40px; /* Khoảng cách giữa các phần */
+}
+
+/* Định dạng cho các phần có hình ảnh */
+.server-capacity .image, .email-delivery .image, .ecommerce-content .image {
+    flex: 1; /* Cột hình ảnh chiếm 50% chiều rộng */
+}
+
+.server-capacity .content, .email-delivery .content, .ecommerce-content .content {
+    flex: 1; /* Cột chữ chiếm 50% chiều rộng */
+}
+
+.server-capacity .image img {
+    width: 60%; /* Hình ảnh chiếm toàn bộ chiều rộng của cột */
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+}
+.email-delivery .image img, .ecommerce-content .image img {
+    width: 75%; /* Hình ảnh chiếm toàn bộ chiều rộng của cột */
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+}
+
+/* Định dạng cho phần không có hình ảnh (domain-registration) */
+.domain-registration {
+    display: block; /* Không cần flexbox vì không có hình ảnh */
+    text-align: left; /* Căn trái nội dung */
+}
+
+.server-capacity h3, .domain-registration h3, .email-delivery h3 {
+    color: #000;
+    font-size: 24px; /* Tăng kích thước chữ để giống hình ảnh */
+    margin-bottom: 10px;
+}
+
+.ecommerce-content h2 {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.server-capacity p, .domain-registration p, .email-delivery p, .ecommerce-content p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.server-capacity a, .domain-registration a, .email-delivery a, .ecommerce-content a {
+    color:  rgb(0, 174, 255);
+    text-decoration: none;
+}
+
+/* eCommerce Solutions Section */
+.ecommerce-solutions {
+    background-color: #8da3c2;
+    padding: 40px 20px;
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+    margin: 0 auto; /* Căn giữa section */
+}
+
+.we-are-the-best {
+    display: flex; /* Sử dụng flexbox để chia thành 2 cột */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    gap: 20px; /* Khoảng cách giữa hình ảnh và nội dung */
+}
+
+.we-are-the-best .image {
+    flex: 1; /* Cột hình ảnh chiếm 50% chiều rộng */
+}
+
+.we-are-the-best .content {
+    flex: 1; /* Cột nội dung chiếm 50% chiều rộng */
+}
+
+.we-are-the-best .image img {
+    width: 75%; /* Hình ảnh chiếm toàn bộ chiều rộng của cột */
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+}
+
+.we-are-the-best h3 {
+    color: #000;
+    font-size: 24px; /* Tăng kích thước chữ để giống hình ảnh */
+    margin-bottom: 10px;
+}
+
+.we-are-the-best p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.we-are-the-best .more-info {
+    background-color: #1976D2; /* Màu xanh dương đậm */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Footer Section */
+footer {
+    background-color: #000;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.payment-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.payment-social p {
+    margin: 0 10px;
+}
+
+.payment-social img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.legal {
+    margin-top: 20px;
+}
+
+.legal a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.legal p {
+    margin-top: 10px;
+}
